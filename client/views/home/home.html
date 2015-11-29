@@ -1,0 +1,24 @@
+<template name="home">
+	{{#if currentUser}}
+		<aside class="col-md-3 hidden-xs hidden-sm">
+			{{> profile}}
+			{{> friendship}}
+		</aside>
+		<section class="col-md-9 col-sm-12 col-xs-12 panel panel-default">
+			<div class="panel-body">
+				{{> post}}
+				{{> timeline}}
+			</div>
+		</section>
+		<aside class="col-xs-12 hidden-md hidden-lg">
+			{{> profile}}
+			{{> friendship}}
+		</aside>
+	{{else}}
+		<div class="text-center">
+			<h1>Meteor Bird</h1>
+			<h3>Não está logado? Clique em "Sign In/Up"</h3>
+		</div>
+	{{/if}}
+	
+</template>

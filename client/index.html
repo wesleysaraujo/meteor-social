@@ -1,0 +1,15 @@
+<head>
+	<title>Meteor Bird</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/latest/lumen/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+</body>
+<template name="layout">
+	{{> header}}
+	<main class="container">
+		<div class="content">
+			{{> yield}}
+		</div>
+	</main>
+	{{> footer}}
+</template>

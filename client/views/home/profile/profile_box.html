@@ -1,0 +1,22 @@
+<template name="profileBox">
+	{{#with currentUser.profile}}
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				{{name}}
+			</div>
+			<div class="panel-body">
+				<p>{{about}}</p>	
+			</div>
+			<div class="panel-footer">
+				<button class="btn btn-sm btn-warning btn-block editar-perfil">
+					Editar Perfil
+				</button>	
+			</div>
+		</div>
+	{{else}}
+		<p>Perfil incompleto</p>
+		<button class="btn btn-block editar-perfil">
+			Completar Perfil
+		</button>
+	{{/with}}
+</template>
